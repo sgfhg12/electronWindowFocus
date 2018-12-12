@@ -1,0 +1,23 @@
+{
+  "name": "windowfocus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgfhg12/electronWindowFocus.git"
+  },
+  "author": "Ildi Bilali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgfhg12/electronWindowFocus/issues"
+  },
+  "homepage": "https://github.com/sgfhg12/electronWindowFocus#readme",
+  "dependencies": {
+    "electron": "^3.0.11"
+  }
+}
