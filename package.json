@@ -1,11 +1,27 @@
 {
   "name": "windowfocus",
+  "productName": "windowFocus",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "windowFocus",
+    "dmg": {
+      "contents":[{
+        "x": 110,
+        "y": 150,
+        "type": "link",
+        "path": "/Applications"
+      }]
+    },
+    "win": {
+      "target": "NSIS"
+    }
   },
   "repository": {
     "type": "git",
@@ -17,7 +33,9 @@
     "url": "https://github.com/sgfhg12/electronWindowFocus/issues"
   },
   "homepage": "https://github.com/sgfhg12/electronWindowFocus#readme",
-  "dependencies": {
-    "electron": "^3.0.11"
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^3.0.11",
+    "electron-builder": "^20.38.3"
   }
 }
